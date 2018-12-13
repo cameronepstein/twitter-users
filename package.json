@@ -4,7 +4,8 @@
   "description": "A web application displaying a users historic tweets and retweets",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
