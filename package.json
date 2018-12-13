@@ -1,0 +1,19 @@
+{
+  "name": "twitter-users",
+  "version": "1.0.0",
+  "description": "A web application displaying a users historic tweets and retweets",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronepstein/twitter-users.git"
+  },
+  "author": "cameronepstein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cameronepstein/twitter-users/issues"
+  },
+  "homepage": "https://github.com/cameronepstein/twitter-users#readme"
+}
