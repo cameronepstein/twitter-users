@@ -1,6 +1,7 @@
 // Connects to twitter API via twit: https://github.com/ttezel/twit
 const Twit = require('twit');
 const Config = require('./config.js');
+const DataProcessor = require('./src/twitterDataProcessor/index.js');
 
 const T = new Twit({
   consumer_key: Config.Keys.consumer_key,
@@ -16,5 +17,5 @@ T.get('statuses/user_timeline', { screen_name: 'cameronepstein' })
   console.log('caught error', err.stack)
 })
 .then(function (result) {
-  console.log('data', result.data);
+  console.log(DataProcessor.processTimelineData(result.data));
 })
