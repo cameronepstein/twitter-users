@@ -11,4 +11,10 @@ var T = new Twit({
   strictSSL: true,     // optional - requires SSL certificates to be valid.
 })
 
-console.log(T);
+T.get('statuses/user_timeline', { screen_name: 'cameronepstein' })
+  .catch(function (err) {
+    console.log('caught error', err.stack)
+  })
+  .then(function (result) {
+    console.log('data', result.data);
+  })
