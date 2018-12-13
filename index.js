@@ -2,7 +2,7 @@
 const Twit = require('twit');
 const Config = require('./config.js');
 
-var T = new Twit({
+const T = new Twit({
   consumer_key: Config.Keys.consumer_key,
   consumer_secret: Config.Keys.consumer_secret,
   access_token: Config.Keys.access_token,
@@ -12,9 +12,9 @@ var T = new Twit({
 })
 
 T.get('statuses/user_timeline', { screen_name: 'cameronepstein' })
-  .catch(function (err) {
-    console.log('caught error', err.stack)
-  })
-  .then(function (result) {
-    console.log('data', result.data);
-  })
+.catch(function (err) {
+  console.log('caught error', err.stack)
+})
+.then(function (result) {
+  console.log('data', result.data);
+})
