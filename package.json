@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/cameronepstein/twitter-users/issues"
   },
-  "homepage": "https://github.com/cameronepstein/twitter-users#readme"
+  "homepage": "https://github.com/cameronepstein/twitter-users#readme",
+  "dependencies": {
+    "twit": "^2.2.11"
+  }
 }
